@@ -1,0 +1,25 @@
+<project name="opendesigner" default="extrackLibFromOnejarToBuildIzpack" basedir=".">
+
+
+
+    <!-- =================================
+   target: buildWebServicesTests
+   ================================= -->
+    <target name="extrackLibFromOnejarToBuildIzpack"
+            description="Extracts the current libs used by opendesigner and copy jars into izpack directory">
+        <property name="libsDir" value="src/izpack/lib"/>
+        <delete dir="${libsDir}">
+        </delete>
+        <mkdir dir="${libsDir}"/>
+
+        <unzip src="target/opendesigner-app.one-jar.jar" dest="src/izpack">
+            <patternset>
+                <include name="lib/"/>
+            </patternset>
+        </unzip>
+
+    </target>
+</project>
+
+
+

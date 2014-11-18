@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">password</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/openossad</property>
+        <property name="hibernate.connection.username">openossad_user</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <property name="show_sql">true</property>
+        <!-- create force initialization of database each time-->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="current_session_context_class">thread</property>
+        
+   		<mapping resource="org/openossad/data/domain/Tblgraphs.hbm.xml"/>
+   		<mapping resource="org/openossad/data/domain/Tblprojects.hbm.xml"/>
+   		<mapping resource="org/openossad/data/domain/OoCells.hbm.xml"/>
+   		<mapping resource="org/openossad/data/domain/OoOptions.hbm.xml"/>
+        <mapping resource="org/openossad/data/domain/Tblindic.hbm.xml"/>
+        <mapping resource="org/openossad/data/domain/Tblproperties.hbm.xml"/>
+        <mapping resource="org/openossad/data/domain/Atblgraphs.hbm.xml"/>
+        <mapping resource="org/openossad/data/domain/OoDocFlow.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
