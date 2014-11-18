@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcplanAccionLinea" table="ooSGCplanAccionLinea" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="palidPa" type="string">
+            <column name="PALidPA" length="20" not-null="true" />
+        </property>
+        <property name="palestado" type="java.lang.Integer">
+            <column name="PALestado" />
+        </property>
+        <property name="palque" type="string">
+            <column name="PALque" length="1000" />
+        </property>
+        <property name="palquien" type="string">
+            <column name="PALquien" length="1000" />
+        </property>
+        <property name="paldonde" type="string">
+            <column name="PALdonde" length="1000" />
+        </property>
+        <property name="palcomo" type="string">
+            <column name="PALcomo" length="1000" />
+        </property>
+        <property name="palcuando" type="string">
+            <column name="PALcuando" length="1000" />
+        </property>
+        <property name="palcuanto" type="string">
+            <column name="PALcuanto" length="1000" />
+        </property>
+        <property name="palarchivo" type="string">
+            <column name="PALarchivo" />
+        </property>
+        <property name="palautor" type="string">
+            <column name="PALautor" length="100" />
+        </property>
+        <property name="palfechaCreacion" type="timestamp">
+            <column name="PALfechaCreacion" length="0" />
+        </property>
+        <property name="palfechaPrevInicio" type="timestamp">
+            <column name="PALfechaPrevInicio" length="0" />
+        </property>
+        <property name="palfechaPrevFin" type="timestamp">
+            <column name="PALfechaPrevFin" length="0" />
+        </property>
+        <property name="palfechaCierre" type="timestamp">
+            <column name="PALfechaCierre" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcauditoria" table="ooSGCauditoria" >
+        <id name="idx" type="string">
+            <column name="IDX" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="afechaCreacion" type="timestamp">
+            <column name="AFechaCreacion" length="0" not-null="true" />
+        </property>
+        <property name="aestado" type="java.lang.Integer">
+            <column name="AEstado" />
+        </property>
+        <property name="adescripcion" type="string">
+            <column name="ADescripcion" length="1000" />
+        </property>
+        <property name="asistema" type="string">
+            <column name="ASistema" length="100" />
+        </property>
+        <property name="asitio" type="string">
+            <column name="ASitio" length="100" />
+        </property>
+        <property name="aproceso" type="string">
+            <column name="AProceso" length="100" />
+        </property>
+        <property name="aproducto" type="string">
+            <column name="AProducto" length="100" />
+        </property>
+        <property name="aproveedor" type="string">
+            <column name="AProveedor" length="100" />
+        </property>
+        <property name="aactividad" type="string">
+            <column name="AActividad" length="100" />
+        </property>
+        <property name="aservicio" type="string">
+            <column name="AServicio" length="100" />
+        </property>
+        <property name="atipoAuditoria" type="string">
+            <column name="ATipoAuditoria" length="100" />
+        </property>
+        <property name="acliente" type="string">
+            <column name="ACliente" length="100" />
+        </property>
+        <property name="arespAnalisis" type="string">
+            <column name="ARespAnalisis" length="100" />
+        </property>
+        <property name="arespDecision" type="string">
+            <column name="ARespDecision" length="100" />
+        </property>
+        <property name="ahoras" type="java.lang.Integer">
+            <column name="AHoras" />
+        </property>
+        <property name="afechaPrevista" type="timestamp">
+            <column name="AFechaPrevista" length="0" />
+        </property>
+        <property name="aautor" type="string">
+            <column name="AAutor" length="100" />
+        </property>
+        <property name="aparticipantes" type="string">
+            <column name="AParticipantes" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblinddb" table="tblinddb" >
+        <id name="iidb" type="java.lang.Integer">
+            <column name="IIDB" />
+            <generator class="identity" />
+        </id>
+        <property name="idbtype" type="java.lang.Integer">
+            <column name="IDBtype" />
+        </property>
+        <property name="iid" type="string">
+            <column name="IID" length="16" />
+        </property>
+        <property name="idbmarkRed" type="java.lang.Integer">
+            <column name="IDBmarkRed" />
+        </property>
+        <property name="idbmarkYellow" type="java.lang.Integer">
+            <column name="IDBmarkYellow" />
+        </property>
+        <property name="idbmarkGreen" type="java.lang.Integer">
+            <column name="IDBmarkGreen" />
+        </property>
+    </class>
+</hibernate-mapping>

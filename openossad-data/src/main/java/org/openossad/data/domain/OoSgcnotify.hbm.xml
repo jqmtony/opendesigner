@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcnotify" table="ooSGCnotify" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="ndescripcion" type="string">
+            <column name="NDescripcion" />
+        </property>
+        <property name="ntipo" type="java.lang.Integer">
+            <column name="Ntipo" />
+        </property>
+        <property name="nuser" type="string">
+            <column name="NUser" length="1000" />
+        </property>
+        <property name="nidRemoto" type="java.lang.Integer">
+            <column name="NIdRemoto" />
+        </property>
+        <property name="nstringIdRemoto" type="string">
+            <column name="NStringIdRemoto" length="100" />
+        </property>
+    </class>
+</hibernate-mapping>

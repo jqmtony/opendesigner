@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgctipoAuditoria" table="ooSGCtipoAuditoria" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="taname" type="string">
+            <column name="TAName" not-null="true" />
+        </property>
+        <property name="tadescription" type="string">
+            <column name="TADescription" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

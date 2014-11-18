@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoDocFlow" table="oodocflow" >
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity" />
+        </id>
+        <property name="ord" type="int">
+            <column name="ord" not-null="true" />
+        </property>
+        <property name="type" type="java.lang.Integer">
+            <column name="Type" />
+        </property>
+        <property name="codeUser" type="int">
+            <column name="CodeUser" not-null="true" />
+        </property>
+        <property name="graphId" type="string">
+            <column name="GraphID" length="16" />
+        </property>
+        <property name="vote" type="string">
+            <column name="Vote" length="50" />
+        </property>
+        <property name="message" type="string">
+            <column name="Message" length="1000" />
+        </property>
+        <property name="voteDate" type="timestamp">
+            <column name="VoteDate" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>

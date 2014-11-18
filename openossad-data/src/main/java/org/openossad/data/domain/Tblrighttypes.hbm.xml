@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblrighttypes" table="tblrighttypes" >
+        <composite-id name="id" class="org.openossad.data.domain.TblrighttypesId">
+            <key-property name="rtypeId" type="java.lang.Integer">
+                <column name="RTypeID" />
+            </key-property>
+            <key-property name="rtypeDescription" type="string">
+                <column name="RtypeDescription" length="50" />
+            </key-property>
+            <key-property name="rtypeOfice" type="int">
+                <column name="RtypeOfice" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

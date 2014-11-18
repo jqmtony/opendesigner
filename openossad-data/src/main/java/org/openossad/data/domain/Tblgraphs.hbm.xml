@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblgraphs" table="tblgraphs" >
+        <id name="gid" type="string">
+            <column name="GId" length="16" />
+            <generator class="assigned" />
+        </id>
+        <property name="gname" type="string">
+            <column name="GName" not-null="true" />
+        </property>
+        <property name="gref" type="string">
+            <column name="GRef" length="50" not-null="true" />
+        </property>
+        <property name="glevel" type="int">
+            <column name="GLevel" not-null="true" />
+        </property>
+        <property name="gorientation" type="int">
+            <column name="GOrientation" not-null="true" />
+        </property>
+        <property name="gtemplate" type="string">
+            <column name="GTemplate" length="50" />
+        </property>
+        <property name="gqgrCaptions" type="java.lang.Boolean">
+            <column name="GQgrCaptions" />
+        </property>
+        <property name="gvisPublic" type="java.lang.Boolean">
+            <column name="GVisPublic" />
+        </property>
+        <property name="projectId" type="string">
+            <column name="ProjectID" length="16" not-null="true" />
+        </property>
+        <property name="gisOk" type="java.lang.Boolean">
+            <column name="GIsOK" />
+        </property>
+        <property name="gversionNumber" type="string">
+            <column name="GVersionNumber" length="32" />
+        </property>
+        <property name="gindice" type="java.lang.Integer">
+            <column name="GIndice" />
+        </property>
+        <property name="gnews" type="string">
+            <column name="GNews" length="1000" />
+        </property>
+        <property name="gauthor" type="string">
+            <column name="GAuthor" length="50" />
+        </property>
+        <property name="gdesignDate" type="timestamp">
+            <column name="GDesignDate" length="0" not-null="true" />
+        </property>
+        <property name="gupdateDate" type="timestamp">
+            <column name="GUpdateDate" length="0" not-null="true" />
+        </property>
+        <property name="gverifNames" type="string">
+            <column name="GVerifNames" />
+        </property>
+        <property name="gapprobNames" type="string">
+            <column name="GApprobNames" />
+        </property>
+        <property name="glinkDoc" type="string">
+            <column name="GLinkDoc" />
+        </property>
+        <property name="gobject" type="string">
+            <column name="GObject" length="1000" />
+        </property>
+        <property name="gdomain" type="string">
+            <column name="GDomain" length="1000" />
+        </property>
+        <property name="gabrList" type="string">
+            <column name="GAbrList" />
+        </property>
+        <property name="gdifList" type="string">
+            <column name="GDifList" />
+        </property>
+        <property name="gkeywords" type="string">
+            <column name="GKeywords" />
+        </property>
+        <property name="gfield1" type="string">
+            <column name="GField1" />
+        </property>
+        <property name="gfield2" type="string">
+            <column name="GField2" />
+        </property>
+        <property name="gfield3" type="string">
+            <column name="GField3" />
+        </property>
+        <property name="gisModel" type="java.lang.Boolean">
+            <column name="GIsModel" />
+        </property>
+        <property name="ghtmlGen" type="java.lang.Boolean">
+            <column name="GHtmlGen" />
+        </property>
+        <property name="gdocGen" type="java.lang.Boolean">
+            <column name="GDocGen" />
+        </property>
+        <property name="gdifDate" type="timestamp">
+            <column name="GDifDate" length="0" not-null="true" />
+        </property>
+        <property name="icone" type="string">
+            <column name="Icone" length="50" />
+        </property>
+        <property name="gtype" type="string">
+            <column name="Gtype" length="10" />
+        </property>
+        <property name="gonlyLink" type="java.lang.Boolean">
+            <column name="GOnlyLink" />
+        </property>
+        <property name="ggraphState" type="java.lang.Integer">
+            <column name="GGraphState" />
+        </property>
+        <property name="gbgcolor" type="string">
+            <column name="GBGColor" length="100" />
+        </property>
+        <property name="gbgimagePath" type="string">
+            <column name="GBGImagePath" />
+        </property>
+    </class>
+</hibernate-mapping>

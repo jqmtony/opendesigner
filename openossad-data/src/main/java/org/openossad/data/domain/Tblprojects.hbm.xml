@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblprojects" table="tblprojects" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="projectId" type="string">
+            <column name="ProjectID" length="16" />
+        </property>
+        <property name="projectName" type="string">
+            <column name="ProjectName" length="50" not-null="true" />
+        </property>
+        <property name="visPublic" type="java.lang.Boolean">
+            <column name="VisPublic" />
+        </property>
+        <property name="parentId" type="string">
+            <column name="ParentID" length="16" />
+        </property>
+        <property name="createDate" type="timestamp">
+            <column name="CreateDate" length="0" not-null="true" />
+        </property>
+        <property name="icone" type="string">
+            <column name="Icone" length="50" />
+        </property>
+        <property name="responsable" type="string">
+            <column name="Responsable" />
+        </property>
+        <property name="applyRestr" type="java.lang.Boolean">
+            <column name="ApplyRestr" />
+        </property>
+        <property name="pref" type="string">
+            <column name="PRef" length="50" />
+        </property>
+        <property name="pobject" type="string">
+            <column name="PObject" length="1000" />
+        </property>
+        <property name="pdomain" type="string">
+            <column name="PDomain" length="1000" />
+        </property>
+        <property name="fldLevel" type="java.lang.Integer">
+            <column name="FldLevel" />
+        </property>
+        <property name="fldNumber" type="java.lang.Integer">
+            <column name="FldNumber" />
+        </property>
+    </class>
+</hibernate-mapping>

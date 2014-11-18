@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblpossiblevalues" table="tblpossiblevalues" >
+        <composite-id name="id" class="org.openossad.data.domain.TblpossiblevaluesId">
+            <key-property name="pvCode" type="string">
+                <column name="pvCode" length="10" />
+            </key-property>
+            <key-property name="pvNumber" type="java.lang.Integer">
+                <column name="pvNumber" />
+            </key-property>
+            <key-property name="pvLongValue" type="int">
+                <column name="pvLongValue" />
+            </key-property>
+            <key-property name="pvDateValue" type="timestamp">
+                <column name="pvDateValue" length="0" />
+            </key-property>
+            <key-property name="pvTextValue" type="string">
+                <column name="pvTextValue" length="50" />
+            </key-property>
+            <key-property name="pvMemoValue" type="string">
+                <column name="pvMemoValue" length="1000" />
+            </key-property>
+            <key-property name="pvOrder" type="int">
+                <column name="pvOrder" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

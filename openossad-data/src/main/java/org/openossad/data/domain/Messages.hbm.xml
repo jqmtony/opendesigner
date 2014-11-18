@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Messages" table="messages" >
+        <composite-id name="id" class="org.openossad.data.domain.MessagesId">
+            <key-property name="codemsg" type="java.lang.Integer">
+                <column name="Codemsg" />
+            </key-property>
+            <key-property name="codelangue" type="int">
+                <column name="Codelangue" />
+            </key-property>
+            <key-property name="msgLibelle" type="string">
+                <column name="MSG_Libelle" length="250" />
+            </key-property>
+            <key-property name="msgTheme" type="string">
+                <column name="MSG_Theme" length="50" />
+            </key-property>
+            <key-property name="msgEmplacement" type="int">
+                <column name="MSG_Emplacement" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

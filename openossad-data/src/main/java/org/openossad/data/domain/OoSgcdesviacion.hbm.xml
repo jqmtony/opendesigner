@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcdesviacion" table="ooSGCdesviacion" >
+        <id name="idx" type="string">
+            <column name="IDX" length="16" />
+            <generator class="assigned" />
+        </id>
+        <property name="destado" type="int">
+            <column name="DEstado" not-null="true" />
+        </property>
+        <property name="dfechaCreacion" type="timestamp">
+            <column name="DFechaCreacion" length="0" />
+        </property>
+        <property name="dsistema" type="string">
+            <column name="DSistema" length="100" />
+        </property>
+        <property name="dsitio" type="string">
+            <column name="DSitio" length="100" />
+        </property>
+        <property name="dproceso" type="string">
+            <column name="DProceso" length="100" />
+        </property>
+        <property name="dproducto" type="string">
+            <column name="DProducto" length="100" />
+        </property>
+        <property name="dproveedor" type="string">
+            <column name="DProveedor" length="100" />
+        </property>
+        <property name="dactividad" type="string">
+            <column name="DActividad" length="100" />
+        </property>
+        <property name="dservicio" type="string">
+            <column name="DServicio" length="100" />
+        </property>
+        <property name="dtipoDesviacion" type="string">
+            <column name="DTipoDesviacion" length="100" />
+        </property>
+        <property name="dcliente" type="string">
+            <column name="DCliente" length="100" />
+        </property>
+        <property name="ddescripcion" type="string">
+            <column name="DDescripcion" length="1000" />
+        </property>
+        <property name="drespAnalisis" type="string">
+            <column name="DRespAnalisis" length="100" />
+        </property>
+        <property name="drespDecision" type="string">
+            <column name="DRespDecision" length="100" />
+        </property>
+        <property name="dhoras" type="java.lang.Integer">
+            <column name="DHoras" />
+        </property>
+        <property name="dfechaPrevista" type="timestamp">
+            <column name="DFechaPrevista" length="0" />
+        </property>
+        <property name="dautor" type="string">
+            <column name="DAutor" length="100" />
+        </property>
+        <property name="dparentId" type="string">
+            <column name="DParentID" length="20" />
+        </property>
+        <property name="dparentLineaId" type="java.lang.Integer">
+            <column name="DParentLineaID" />
+        </property>
+        <property name="danaFecha" type="timestamp">
+            <column name="DAnaFecha" length="0" />
+        </property>
+        <property name="danaTxt" type="string">
+            <column name="DAnaTxt" length="1000" />
+        </property>
+        <property name="danaHoras" type="java.lang.Integer">
+            <column name="DAnaHoras" />
+        </property>
+        <property name="ddesDecision" type="string">
+            <column name="DDesDecision" length="100" />
+        </property>
+        <property name="ddesTxt" type="string">
+            <column name="DDesTxt" length="1000" />
+        </property>
+        <property name="ddesHoras" type="java.lang.Integer">
+            <column name="DDesHoras" />
+        </property>
+    </class>
+</hibernate-mapping>

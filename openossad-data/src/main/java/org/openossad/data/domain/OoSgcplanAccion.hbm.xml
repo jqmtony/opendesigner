@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcplanAccion" table="ooSGCplanAccion" >
+        <id name="idx" type="string">
+            <column name="IDX" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="paidAudit" type="string">
+            <column name="PAidAudit" length="20" />
+        </property>
+        <property name="paidDesviacion" type="string">
+            <column name="PAidDesviacion" length="20" />
+        </property>
+        <property name="paidResolucion" type="string">
+            <column name="PAidResolucion" length="20" />
+        </property>
+        <property name="paidOportunidad" type="string">
+            <column name="PAidOportunidad" length="20" />
+        </property>
+        <property name="paproceso" type="string">
+            <column name="PAProceso" />
+        </property>
+        <property name="parespProceso" type="string">
+            <column name="PARespProceso" />
+        </property>
+        <property name="paparentTipo" type="java.lang.Integer">
+            <column name="PAParentTipo" />
+        </property>
+        <property name="paparentEnunciado" type="string">
+            <column name="PAParentEnunciado" length="1000" />
+        </property>
+        <property name="paparentRespAnalisis" type="string">
+            <column name="PAParentRespAnalisis" length="100" />
+        </property>
+        <property name="paparentRespDesviacion" type="string">
+            <column name="PAParentRespDesviacion" length="100" />
+        </property>
+        <property name="paparentDescAnalisis" type="string">
+            <column name="PAParentDescAnalisis" length="1000" />
+        </property>
+        <property name="paparentDescDesviacion" type="string">
+            <column name="PAParentDescDesviacion" length="1000" />
+        </property>
+        <property name="paparentDecision" type="string">
+            <column name="PAParentDecision" length="100" />
+        </property>
+        <property name="paresolucionCausa" type="string">
+            <column name="PAResolucionCausa" />
+        </property>
+        <property name="paresolucionSolucion" type="string">
+            <column name="PAResolucionSolucion" />
+        </property>
+        <property name="paresponsable" type="string">
+            <column name="PAResponsable" />
+        </property>
+        <property name="patipoAccion" type="string">
+            <column name="PATipoAccion" length="100" />
+        </property>
+        <property name="pafechaCreacion" type="timestamp">
+            <column name="PAFechaCreacion" length="0" />
+        </property>
+        <property name="pahoras" type="java.lang.Integer">
+            <column name="PAHoras" />
+        </property>
+        <property name="paestado" type="java.lang.Integer">
+            <column name="PAEstado" />
+        </property>
+        <property name="paautor" type="string">
+            <column name="PAAutor" length="100" />
+        </property>
+        <property name="paactividad" type="string">
+            <column name="PAActividad" />
+        </property>
+        <property name="pacliente" type="string">
+            <column name="PACliente" />
+        </property>
+        <property name="pasistema" type="string">
+            <column name="PASistema" />
+        </property>
+        <property name="pasitio" type="string">
+            <column name="PASitio" />
+        </property>
+        <property name="paproducto" type="string">
+            <column name="PAProducto" />
+        </property>
+        <property name="paservicio" type="string">
+            <column name="PAServicio" />
+        </property>
+        <property name="padescripcion" type="string">
+            <column name="PADescripcion" length="1000" />
+        </property>
+        <property name="paproveedor" type="string">
+            <column name="PAProveedor" />
+        </property>
+        <property name="paparentTipoParent" type="string">
+            <column name="PAParentTipoParent" length="100" />
+        </property>
+        <property name="pafechaPrevistaIni" type="timestamp">
+            <column name="PAfechaPrevistaIni" length="0" />
+        </property>
+        <property name="pafechaPrevistaFin" type="timestamp">
+            <column name="PAfechaPrevistaFin" length="0" />
+        </property>
+        <property name="pafechaCierre" type="timestamp">
+            <column name="PAfechaCierre" length="0" />
+        </property>
+    </class>
+</hibernate-mapping>

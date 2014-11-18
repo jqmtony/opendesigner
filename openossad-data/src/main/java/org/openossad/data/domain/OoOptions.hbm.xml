@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoOptions" table="oooptions" >
+        <id name="oid" type="java.lang.Integer">
+            <column name="OId" />
+            <generator class="identity" />
+        </id>
+        <property name="baseDeDatos" type="string">
+            <column name="BaseDeDatos" length="100" />
+        </property>
+        <property name="connDriverClass" type="string">
+            <column name="connDriverClass" />
+        </property>
+        <property name="connString" type="string">
+            <column name="connString" />
+        </property>
+        <property name="connUser" type="string">
+            <column name="connUser" />
+        </property>
+        <property name="connPassword" type="string">
+            <column name="connPassword" />
+        </property>
+        <property name="servidorOpenServer" type="string">
+            <column name="ServidorOpenSERVER" />
+        </property>
+        <property name="carpetaGallery" type="string">
+            <column name="CarpetaGallery" />
+        </property>
+        <property name="carpetaModelosWord" type="string">
+            <column name="CarpetaModelosWord" />
+        </property>
+        <property name="carpetaRelaciones" type="string">
+            <column name="CarpetaRelaciones" />
+        </property>
+        <property name="carpetaTrabajo" type="string">
+            <column name="CarpetaTrabajo" />
+        </property>
+        <property name="carpetaTrabajoPublico" type="string">
+            <column name="CarpetaTrabajoPublico" />
+        </property>
+        <property name="carpetaDifusionCreacion" type="string">
+            <column name="CarpetaDifusionCreacion" />
+        </property>
+        <property name="carpetaDifusionAplicable" type="string">
+            <column name="CarpetaDifusionAplicable" />
+        </property>
+        <property name="carpetaDifusionWeb" type="string">
+            <column name="CarpetaDifusionWeb" />
+        </property>
+        <property name="carpetaImportacion" type="string">
+            <column name="CarpetaImportacion" />
+        </property>
+        <property name="actualizarPropiedadesGrafico" type="java.lang.Boolean">
+            <column name="ActualizarPropiedadesGrafico" />
+        </property>
+        <property name="solicitarPropiedadesGrafico" type="java.lang.Boolean">
+            <column name="SolicitarPropiedadesGrafico" />
+        </property>
+        <property name="abrirGraficosAlInicio" type="java.lang.Boolean">
+            <column name="AbrirGraficosAlInicio" />
+        </property>
+        <property name="visualizarIndicadorCarpeta" type="java.lang.Boolean">
+            <column name="VisualizarIndicadorCarpeta" />
+        </property>
+        <property name="aplicarIntegridadReferencial" type="java.lang.Boolean">
+            <column name="AplicarIntegridadReferencial" />
+        </property>
+        <property name="tiempoDeGuardado" type="java.lang.Integer">
+            <column name="TiempoDeGuardado" />
+        </property>
+        <property name="confirmarAntesDeGuardar" type="java.lang.Boolean">
+            <column name="ConfirmarAntesDeGuardar" />
+        </property>
+        <property name="documentoGuardarPorNombre" type="java.lang.Boolean">
+            <column name="DocumentoGuardarPorNombre" />
+        </property>
+        <property name="webGuardarPorNombre" type="java.lang.Boolean">
+            <column name="WebGuardarPorNombre" />
+        </property>
+        <property name="proyectoGuardarPorNombre" type="java.lang.Boolean">
+            <column name="ProyectoGuardarPorNombre" />
+        </property>
+        <property name="controlarCoherenciaSegunNivel" type="java.lang.Boolean">
+            <column name="ControlarCoherenciaSegunNivel" />
+        </property>
+        <property name="desencadenarAlineacionRolesAutomatica" type="java.lang.Boolean">
+            <column name="DesencadenarAlineacionRolesAutomatica" />
+        </property>
+        <property name="utilizarFlechaDeAnguloRecto" type="java.lang.Boolean">
+            <column name="UtilizarFlechaDeAnguloRecto" />
+        </property>
+        <property name="orientarPaginaEnFuncionDeAlineacion" type="java.lang.Boolean">
+            <column name="OrientarPaginaEnFuncionDeAlineacion" />
+        </property>
+        <property name="seleccionDeArchivoAlIndicarReferenciaDocumental" type="java.lang.Boolean">
+            <column name="SeleccionDeArchivoAlIndicarReferenciaDocumental" />
+        </property>
+        <property name="visualizarSugerenciasInicio" type="java.lang.Boolean">
+            <column name="VisualizarSugerenciasInicio" />
+        </property>
+        <property name="activarConsejos" type="java.lang.Boolean">
+            <column name="ActivarConsejos" />
+        </property>
+        <property name="activarPanelDeInicio" type="java.lang.Boolean">
+            <column name="ActivarPanelDeInicio" />
+        </property>
+        <property name="activarSeguridad" type="java.lang.Boolean">
+            <column name="ActivarSeguridad" />
+        </property>
+        <property name="activarSeguridadOo" type="java.lang.Boolean">
+            <column name="ActivarSeguridadOO" />
+        </property>
+        <property name="activarSeguridadSys" type="java.lang.Boolean">
+            <column name="ActivarSeguridadSys" />
+        </property>
+    </class>
+</hibernate-mapping>

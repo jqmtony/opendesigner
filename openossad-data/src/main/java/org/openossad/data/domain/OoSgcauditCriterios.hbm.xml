@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcauditCriterios" table="ooSGCauditCriterios" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="acauditId" type="string">
+            <column name="ACAuditID" length="20" not-null="true" />
+        </property>
+        <property name="actitulo" type="string">
+            <column name="ACTitulo" />
+        </property>
+        <property name="actipo" type="java.lang.Integer">
+            <column name="ACTipo" />
+        </property>
+        <property name="acurl" type="string">
+            <column name="ACURL" />
+        </property>
+        <property name="acarchivo" type="string">
+            <column name="ACArchivo" />
+        </property>
+        <property name="acfecha" type="timestamp">
+            <column name="ACFecha" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

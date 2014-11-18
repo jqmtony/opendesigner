@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblindic" table="tblindic" >
+        <id name="iidx" type="java.lang.Integer">
+            <column name="IIDX" />
+            <generator class="identity" />
+        </id>
+        <property name="iid" type="string">
+            <column name="IId" length="16" />
+        </property>
+        <property name="iref" type="string">
+            <column name="IRef" length="30" not-null="true" />
+        </property>
+        <property name="iname" type="string">
+            <column name="IName" length="30" not-null="true" />
+        </property>
+        <property name="idescription" type="string">
+            <column name="IDescription" length="1000" not-null="true" />
+        </property>
+        <property name="icalcul" type="string">
+            <column name="ICalcul" length="50" not-null="true" />
+        </property>
+        <property name="iperiode" type="string">
+            <column name="IPeriode" length="50" not-null="true" />
+        </property>
+        <property name="itype" type="int">
+            <column name="IType" not-null="true" />
+        </property>
+        <property name="iobjectif" type="float">
+            <column name="IObjectif" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="iponderation" type="int">
+            <column name="IPonderation" not-null="true" />
+        </property>
+        <property name="iactualValue" type="float">
+            <column name="IActualValue" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="itrend" type="int">
+            <column name="ITrend" not-null="true" />
+        </property>
+        <property name="inbVal" type="int">
+            <column name="INbVal" not-null="true" />
+        </property>
+        <property name="iresponsable" type="string">
+            <column name="IResponsable" length="64" not-null="true" />
+        </property>
+        <property name="inbDec" type="int">
+            <column name="InbDec" not-null="true" />
+        </property>
+        <property name="iscaleMin" type="float">
+            <column name="IScaleMin" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="iscaleMax" type="float">
+            <column name="IScaleMax" precision="12" scale="0" not-null="true" />
+        </property>
+        <property name="ibsbtype" type="int">
+            <column name="IBSBType" not-null="true" />
+        </property>
+        <property name="idbitemId" type="int">
+            <column name="IDBItemId" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

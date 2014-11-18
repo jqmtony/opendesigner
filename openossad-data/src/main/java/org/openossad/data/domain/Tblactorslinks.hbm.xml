@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblactorslinks" table="tblactorslinks" >
+        <composite-id name="id" class="org.openossad.data.domain.TblactorslinksId">
+            <key-property name="gidAm" type="string">
+                <column name="GIdAM" length="50" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="UserName" length="50" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

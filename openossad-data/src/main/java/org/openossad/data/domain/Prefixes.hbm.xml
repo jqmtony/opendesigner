@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Prefixes" table="prefixes" >
+        <composite-id name="id" class="org.openossad.data.domain.PrefixesId">
+            <key-property name="prefixeAction" type="string">
+                <column name="prefixe_action" length="50" />
+            </key-property>
+            <key-property name="prefixeAudit" type="string">
+                <column name="prefixe_audit" length="50" />
+            </key-property>
+            <key-property name="prefixeIncident" type="string">
+                <column name="prefixe_incident" length="50" />
+            </key-property>
+            <key-property name="indiceAction" type="int">
+                <column name="indice_action" />
+            </key-property>
+            <key-property name="indiceAudit" type="int">
+                <column name="indice_audit" />
+            </key-property>
+            <key-property name="indiceIncident" type="int">
+                <column name="indice_incident" />
+            </key-property>
+            <key-property name="prefixe" type="java.lang.Integer">
+                <column name="Prefixe" />
+            </key-property>
+            <key-property name="autorisation" type="int">
+                <column name="autorisation" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

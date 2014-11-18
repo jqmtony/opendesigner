@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcactorCompetencias" table="ooSGCactorCompetencias" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="aceducacion" type="string">
+            <column name="ACeducacion" length="1000" />
+        </property>
+        <property name="acformacion" type="string">
+            <column name="ACformacion" length="1000" />
+        </property>
+        <property name="achabilidades" type="string">
+            <column name="AChabilidades" length="1000" />
+        </property>
+        <property name="acexperiencia" type="string">
+            <column name="ACexperiencia" length="1000" />
+        </property>
+        <property name="acfecha" type="timestamp">
+            <column name="ACFecha" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

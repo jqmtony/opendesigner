@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoDemands" table="ooDemands" >
+        <composite-id name="id" class="org.openossad.data.domain.OoDemandsId">
+            <key-property name="did" type="java.lang.Integer">
+                <column name="Did" />
+            </key-property>
+            <key-property name="ddemandeur" type="int">
+                <column name="Ddemandeur" />
+            </key-property>
+            <key-property name="ddestinataire" type="int">
+                <column name="Ddestinataire" />
+            </key-property>
+            <key-property name="dtypeElement" type="int">
+                <column name="DTypeElement" />
+            </key-property>
+            <key-property name="didelement" type="string">
+                <column name="DIDElement" length="50" />
+            </key-property>
+            <key-property name="ddateDemande" type="timestamp">
+                <column name="DDateDemande" length="0" />
+            </key-property>
+            <key-property name="dlibDemande" type="string">
+                <column name="DLibDemande" length="1000" />
+            </key-property>
+            <key-property name="dlibDecision" type="string">
+                <column name="DLibDecision" length="1000" />
+            </key-property>
+            <key-property name="ddateDecision" type="timestamp">
+                <column name="DDateDecision" length="0" />
+            </key-property>
+            <key-property name="ddecision" type="int">
+                <column name="DDecision" />
+            </key-property>
+            <key-property name="ddecisionLue" type="int">
+                <column name="DDecisionLue" />
+            </key-property>
+            <key-property name="ddateLecture" type="timestamp">
+                <column name="DDateLecture" length="0" />
+            </key-property>
+            <key-property name="dname" type="string">
+                <column name="DName" length="50" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

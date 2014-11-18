@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoLogs" table="ooLogs" >
+        <composite-id name="id" class="org.openossad.data.domain.OoLogsId">
+            <key-property name="licenceId" type="string">
+                <column name="LicenceID" length="16" />
+            </key-property>
+            <key-property name="installNumber" type="string">
+                <column name="InstallNumber" length="25" />
+            </key-property>
+            <key-property name="userName" type="string">
+                <column name="UserName" length="64" />
+            </key-property>
+            <key-property name="versionNumber" type="string">
+                <column name="VersionNumber" length="15" />
+            </key-property>
+            <key-property name="productName" type="string">
+                <column name="ProductName" length="50" />
+            </key-property>
+            <key-property name="lastConnect" type="timestamp">
+                <column name="LastConnect" length="0" />
+            </key-property>
+            <key-property name="lastDisconnect" type="timestamp">
+                <column name="LastDisconnect" length="0" />
+            </key-property>
+            <key-property name="connected" type="int">
+                <column name="Connected" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

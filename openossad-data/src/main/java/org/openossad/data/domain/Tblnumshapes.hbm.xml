@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblnumshapes" table="tblnumshapes" >
+        <composite-id name="id" class="org.openossad.data.domain.TblnumshapesId">
+            <key-property name="nsId" type="java.lang.Integer">
+                <column name="nsId" />
+            </key-property>
+            <key-property name="nsGraphId" type="string">
+                <column name="nsGraphId" length="16" />
+            </key-property>
+            <key-property name="nsTypeId" type="int">
+                <column name="nsTypeId" />
+            </key-property>
+            <key-property name="nsFormat" type="int">
+                <column name="nsFormat" />
+            </key-property>
+            <key-property name="nsChrono" type="java.lang.Boolean">
+                <column name="nsChrono" />
+            </key-property>
+            <key-property name="nsAllTypes" type="java.lang.Boolean">
+                <column name="nsAllTypes" />
+            </key-property>
+            <key-property name="nsSameFormat" type="java.lang.Boolean">
+                <column name="nsSameFormat" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

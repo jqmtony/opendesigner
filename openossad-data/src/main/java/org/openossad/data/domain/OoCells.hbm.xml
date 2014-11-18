@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoCells" table="ooCells" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="shGraphId" type="string">
+            <column name="shGraphId" length="16" not-null="true" />
+        </property>
+        <property name="shFormId" type="string">
+            <column name="shFormId" length="40" />
+        </property>
+        <property name="shTypeId" type="string">
+            <column name="shTypeId" length="100" not-null="true" />
+        </property>
+        <property name="shName" type="string">
+            <column name="shName" length="500" />
+        </property>
+        <property name="shNumber" type="string">
+            <column name="shNumber" length="10" />
+        </property>
+        <property name="shComment" type="string">
+            <column name="shComment" length="500" />
+        </property>
+        <property name="shCenterX" type="string">
+            <column name="shCenterX" length="10" />
+        </property>
+        <property name="shCenterY" type="string">
+            <column name="shCenterY" length="10" />
+        </property>
+        <property name="shHeight" type="string">
+            <column name="shHeight" length="10" />
+        </property>
+        <property name="shWidth" type="string">
+            <column name="shWidth" length="10" />
+        </property>
+        <property name="shChildCount" type="string">
+            <column name="shChildCount" length="5" />
+        </property>
+        <property name="shStyle" type="string">
+            <column name="shStyle" />
+        </property>
+        <property name="shParentId" type="string">
+            <column name="shParentID" length="50" />
+        </property>
+        <property name="shSourceId" type="string">
+            <column name="shSourceID" length="50" />
+        </property>
+        <property name="shRelatedId" type="string">
+            <column name="shRelatedId" length="200" />
+        </property>
+        <property name="shRelatedName" type="string">
+            <column name="shRelatedName" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

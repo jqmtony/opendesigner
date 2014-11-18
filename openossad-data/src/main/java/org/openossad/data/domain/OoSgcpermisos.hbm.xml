@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoSgcpermisos" table="ooSGCpermisos" >
+        <id name="idx" type="java.lang.Integer">
+            <column name="IDX" />
+            <generator class="identity" />
+        </id>
+        <property name="prolId" type="string">
+            <column name="PRolId" length="20" not-null="true" />
+        </property>
+        <property name="pmenuLangKey" type="string">
+            <column name="PMenuLangKey" length="50" not-null="true" />
+        </property>
+        <property name="pc1" type="java.lang.Integer">
+            <column name="PC1" />
+        </property>
+        <property name="pc2" type="java.lang.Integer">
+            <column name="PC2" />
+        </property>
+        <property name="pc3" type="java.lang.Integer">
+            <column name="PC3" />
+        </property>
+        <property name="pm1" type="java.lang.Integer">
+            <column name="PM1" />
+        </property>
+        <property name="pm2" type="java.lang.Integer">
+            <column name="PM2" />
+        </property>
+        <property name="pm3" type="java.lang.Integer">
+            <column name="PM3" />
+        </property>
+        <property name="porder" type="java.lang.Integer">
+            <column name="POrder" />
+        </property>
+        <property name="pisMainMenu" type="java.lang.Boolean">
+            <column name="PIsMainMenu" />
+        </property>
+    </class>
+</hibernate-mapping>

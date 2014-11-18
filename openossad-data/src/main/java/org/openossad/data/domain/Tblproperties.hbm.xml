@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblproperties" table="tblproperties" >
+        <composite-id name="id" class="org.openossad.data.domain.TblpropertiesId">
+            <key-property name="pvCode" type="string">
+                <column name="pvCode" length="10" />
+            </key-property>
+            <key-property name="pvDescription" type="string">
+                <column name="pvDescription" length="50" />
+            </key-property>
+            <key-property name="pvType" type="short">
+                <column name="pvType" />
+            </key-property>
+            <key-property name="pvGraphUse" type="java.lang.Boolean">
+                <column name="pvGraphUse" />
+            </key-property>
+            <key-property name="pvDocUse" type="java.lang.Boolean">
+                <column name="pvDocUse" />
+            </key-property>
+            <key-property name="pvEntityUse" type="java.lang.Boolean">
+                <column name="pvEntityUse" />
+            </key-property>
+            <key-property name="pvFormUse" type="java.lang.Boolean">
+                <column name="pvFormUse" />
+            </key-property>
+            <key-property name="pvActorUse" type="java.lang.Boolean">
+                <column name="pvActorUse" />
+            </key-property>
+            <key-property name="pvFolderUse" type="java.lang.Boolean">
+                <column name="pvFolderUse" />
+            </key-property>
+            <key-property name="pvOrder" type="int">
+                <column name="pvOrder" />
+            </key-property>
+            <key-property name="pvLongDescription" type="string">
+                <column name="pvLongDescription" length="254" />
+            </key-property>
+            <key-property name="pvIndicatorUse" type="java.lang.Boolean">
+                <column name="pvIndicatorUse" />
+            </key-property>
+            <key-property name="pvUseDetail" type="int">
+                <column name="pvUseDetail" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

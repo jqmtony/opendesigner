@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.ValoresGlobales" table="valores_globales" >
+        <composite-id name="id" class="org.openossad.data.domain.ValoresGlobalesId">
+            <key-property name="v1" type="int">
+                <column name="v1" />
+            </key-property>
+            <key-property name="v2" type="int">
+                <column name="v2" />
+            </key-property>
+            <key-property name="v3" type="int">
+                <column name="v3" />
+            </key-property>
+            <key-property name="v4" type="int">
+                <column name="v4" />
+            </key-property>
+            <key-property name="v5" type="java.lang.Integer">
+                <column name="v5" />
+            </key-property>
+            <key-property name="v6" type="int">
+                <column name="v6" />
+            </key-property>
+            <key-property name="v7" type="int">
+                <column name="v7" />
+            </key-property>
+            <key-property name="v8" type="int">
+                <column name="v8" />
+            </key-property>
+            <key-property name="v9" type="int">
+                <column name="v9" />
+            </key-property>
+            <key-property name="v10" type="int">
+                <column name="v10" />
+            </key-property>
+            <key-property name="v11" type="int">
+                <column name="v11" />
+            </key-property>
+            <key-property name="v12" type="int">
+                <column name="v12" />
+            </key-property>
+            <key-property name="v13" type="int">
+                <column name="v13" />
+            </key-property>
+            <key-property name="v14" type="int">
+                <column name="v14" />
+            </key-property>
+            <key-property name="v15" type="int">
+                <column name="v15" />
+            </key-property>
+            <key-property name="v16" type="int">
+                <column name="v16" />
+            </key-property>
+            <key-property name="v17" type="int">
+                <column name="v17" />
+            </key-property>
+            <key-property name="v18" type="int">
+                <column name="v18" />
+            </key-property>
+            <key-property name="v19" type="int">
+                <column name="v19" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

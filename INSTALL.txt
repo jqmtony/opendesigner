@@ -1,0 +1,4 @@
+if you want to compile, do this:
+I couln't get the org.safehaus.jug dependency, so I did it by hand.
+1) download the jar file: http://mirrors.ibiblio.org/pub/mirrors/maven/mule/dependencies/maven2/jug/jug/2.0.0/jug-2.0.0.jar
+2) install it on the maven repo: mvn install:install-file -DgroupId=org.safehaus.jug -DartifactId=jug -Dversion=2.0.0 -Dpackaging=jar -Dfile=/path/to/file

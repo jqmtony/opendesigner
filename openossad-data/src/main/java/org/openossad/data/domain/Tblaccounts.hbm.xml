@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblaccounts" table="tblaccounts" >
+        <id name="sid" type="java.lang.Integer">
+            <column name="SID" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="64" />
+        </property>
+        <property name="completeName" type="string">
+            <column name="CompleteName" not-null="true" />
+        </property>
+        <property name="description" type="string">
+            <column name="Description" not-null="true" />
+        </property>
+        <property name="isGroup" type="int">
+            <column name="IsGroup" not-null="true" />
+        </property>
+        <property name="type" type="int">
+            <column name="Type" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="64" not-null="true" />
+        </property>
+        <property name="samsid" type="string">
+            <column name="SAMSID" length="64" not-null="true" />
+        </property>
+        <property name="samaccountName" type="string">
+            <column name="SAMAccountName" length="64" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="32" not-null="true" />
+        </property>
+        <property name="mail" type="string">
+            <column name="Mail" not-null="true" />
+        </property>
+        <property name="lastLoginDate" type="timestamp">
+            <column name="LastLoginDate" length="0" not-null="true" />
+        </property>
+        <property name="id" type="string">
+            <column name="ID" length="16" not-null="true" />
+        </property>
+        <property name="phoneHome" type="string">
+            <column name="PhoneHome" length="32" not-null="true" />
+        </property>
+        <property name="fax" type="string">
+            <column name="Fax" length="50" not-null="true" />
+        </property>
+        <property name="faxHome" type="string">
+            <column name="FaxHome" length="32" not-null="true" />
+        </property>
+        <property name="mobilPhone" type="string">
+            <column name="MobilPhone" length="32" not-null="true" />
+        </property>
+        <property name="mobilHomePhone" type="string">
+            <column name="MobilHomePhone" length="32" not-null="true" />
+        </property>
+        <property name="mobilCarPhone" type="string">
+            <column name="MobilCarPhone" length="32" not-null="true" />
+        </property>
+        <property name="adress" type="string">
+            <column name="Adress" length="254" not-null="true" />
+        </property>
+        <property name="mail2" type="string">
+            <column name="Mail2" not-null="true" />
+        </property>
+        <property name="mail3" type="string">
+            <column name="Mail3" not-null="true" />
+        </property>
+        <property name="responsable" type="string">
+            <column name="Responsable" length="64" not-null="true" />
+        </property>
+        <property name="assistant" type="string">
+            <column name="Assistant" length="64" not-null="true" />
+        </property>
+        <property name="photoGid" type="string">
+            <column name="PhotoGID" length="16" not-null="true" />
+        </property>
+        <property name="updateDate" type="timestamp">
+            <column name="UpdateDate" length="0" not-null="true" />
+        </property>
+        <property name="htmlGen" type="java.lang.Boolean">
+            <column name="HtmlGen" />
+        </property>
+        <property name="gtype" type="string">
+            <column name="Gtype" length="10" not-null="true" />
+        </property>
+        <property name="pageArrivee" type="string">
+            <column name="PageArrivee" length="100" not-null="true" />
+        </property>
+        <property name="roles" type="string">
+            <column name="Roles" />
+        </property>
+    </class>
+</hibernate-mapping>

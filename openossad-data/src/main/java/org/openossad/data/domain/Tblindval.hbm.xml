@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.Tblindval" table="tblindval" >
+        <composite-id name="id" class="org.openossad.data.domain.TblindvalId">
+            <key-property name="ivdate" type="timestamp">
+                <column name="IVDate" length="0" />
+            </key-property>
+            <key-property name="ivid" type="string">
+                <column name="IVID" length="16" />
+            </key-property>
+            <key-property name="ivvalue" type="float">
+                <column name="IVVALUE" precision="12" scale="0" />
+            </key-property>
+            <key-property name="ivcomment" type="string">
+                <column name="IVComment" length="1000" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-oct-2010 22:27:18 by Hibernate Tools 3.2.4.GA -->
+<hibernate-mapping>
+    <class name="org.openossad.data.domain.OoCounters" table="oocounters" >
+        <id name="cid" type="java.lang.Integer">
+            <column name="CId" />
+            <generator class="identity" />
+        </id>
+        <property name="gserial" type="string">
+            <column name="GSerial" length="6" />
+        </property>
+        <property name="ctype" type="string">
+            <column name="CType" length="3" />
+        </property>
+        <property name="count" type="int">
+            <column name="Ccount" not-null="true" />
+        </property>
+        <property name="cprefix" type="string">
+            <column name="Cprefix" length="10" />
+        </property>
+        <property name="csubfix" type="string">
+            <column name="Csubfix" length="10" />
+        </property>
+        <property name="cdescripcion" type="string">
+            <column name="CDescripcion" />
+        </property>
+        <property name="celement" type="string">
+            <column name="CElement" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
