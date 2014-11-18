@@ -14,7 +14,7 @@
     <groupId>jgraphx-project</groupId>
     <artifactId>editor</artifactId>
     <version>1.0</version>
-    <name>Sample Editor</name>
+    <name>Editor</name>
 
 
     <dependencies>
