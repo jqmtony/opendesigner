@@ -59,8 +59,8 @@ public class OpenDESIGNER extends BasicGraphEditorOO
             HypersonicManager hypersonicManager = new HypersonicManager();
             hypersonicManager.startHypersonicServer();
 
-            InitOpenossadData initOpenossadData = new InitOpenossadData();
-            initOpenossadData.init();
+//            InitOpenossadData initOpenossadData = new InitOpenossadData();
+//            initOpenossadData.init();
         }
         catch (Exception e1)
         {
